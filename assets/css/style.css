@@ -670,6 +670,9 @@ ul {
   .fs-110 {
     font-size: 76px;
   }
+  .f-2 {
+    font-size: 18px;
+  }
 }
 @media (min-width: 1200px) {
   .fs-110 {
