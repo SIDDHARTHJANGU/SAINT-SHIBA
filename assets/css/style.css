@@ -416,6 +416,10 @@ ul {
   border-radius: 50%;
   z-index: 1;
 }
+.image {
+  position: absolute;
+  right: 20%;
+}
 .left {
   left: 0;
 }
