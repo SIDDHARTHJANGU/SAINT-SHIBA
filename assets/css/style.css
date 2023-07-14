@@ -469,11 +469,44 @@ ul {
   box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0
     var(--bs-accordion-border-color);
 }
+
+element.style {
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none !important;
+  box-sizing: border-box;
+  transition: all 200ms linear;
+  /* border: 0; */
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+user agent stylesheet div {
+  display: block;
+}
 .accordion-item {
   color: var(--bs-accordion-color);
   background-color: black !important;
+  border: 0 !important;
+}
+.accordion-item {
+  color: var(--bs-accordion-color);
+  background-color: var(--bs-accordion-bg);
   border: var(--bs-accordion-border-width) solid
     var(--bs-accordion-border-color);
+}
+.accordion {
+  --bs-accordion-border-width: 0 !important;
+}
+.accordion-item {
+  color: var(--bs-accordion-color);
+  background-color: black !important;
+  border: 0 !important;
 }
 .Phase1 {
   color: var(--white, #fff);
@@ -690,7 +723,10 @@ ul {
   .fs-110 {
     font-size: 60px;
   }
-  .mt-20 {
+  .mt_30 {
+    margin-top: 30px !important;
+  }
+  .mt-21 {
     margin-top: 20px;
   }
   .fs-22 {
@@ -715,11 +751,21 @@ ul {
   .f-2 {
     font-size: 18px;
   }
+}
+/* @media (min-width: 1200px) {
+  .fs-110 {
+    font-size: 110px !important;
+  }
+  .fs-22 {
+    font-size: 25px;
+  }
+  .mt-30 {
+    margin-top: 110px;
+  }
   .mt-20 {
     margin-top: 0;
   }
-}
-
+} */
 @media (min-width: 1400px) {
   .mt-30 {
     margin-top: 30px;
