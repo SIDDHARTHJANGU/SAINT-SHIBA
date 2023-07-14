@@ -127,20 +127,8 @@ ul {
     opacity: 1;
     pointer-events: all;
   }
-  .mt_10 {
-    margin-top: 10px;
-  }
-  .ml_64 {
-    margin-left: 0;
-  }
   .ml-35 {
     margin-left: 0;
-  }
-  .mb_md_20px {
-    display: inline-block;
-  }
-  .mb_bttm {
-    margin-bottom: 30px;
   }
   .gap-35 {
     gap: 35px;
