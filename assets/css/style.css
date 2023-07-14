@@ -86,6 +86,7 @@
     --gradient-h,
     linear-gradient(90deg, #ffa800 0%, #f06500 100%)
   );
+  border: none;
 }
 ol,
 ul {
