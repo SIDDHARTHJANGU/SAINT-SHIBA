@@ -173,9 +173,9 @@ ul {
 .circle {
   width: 71px;
   height: 71px;
-  border-radius: 71%;
+  border-radius: 100px;
   background: #ffffff;
-  margin: 17px 33px 11px 13px;
+
   cursor: pointer !important;
 }
 .circle:hover {
