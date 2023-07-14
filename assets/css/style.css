@@ -45,6 +45,12 @@
 .fw-400 {
   font-weight: 400 !important;
 }
+.fs-18 {
+  font-size: 18px !important;
+}
+.fw-600 {
+  font-weight: 600 !important;
+}
 .fs-22 {
   font-size: 25px;
 }
@@ -70,6 +76,7 @@
   );
   padding: 7px 23px;
   border-radius: 25px;
+  border: none;
 }
 .bg-clr3 {
   padding: 12px 32px;
@@ -560,6 +567,9 @@ ul {
   .fs-110 {
     font-size: 47px;
   }
+  .pt-60 {
+    padding-top: 60px;
+  }
   .fs-22 {
     font-size: 19px;
   }
@@ -622,6 +632,9 @@ ul {
   .fs-110 {
     font-size: 84px;
   }
+  .pt-60 {
+    padding-top: 60px;
+  }
   .Volutpat {
     font-size: 22px;
   }
@@ -666,6 +679,17 @@ ul {
     font-size: 12px;
   }
 }
+@media (min-width: 768px) {
+  .fs-110 {
+    font-size: 60px;
+  }
+  .fs-22 {
+    font-size: 18px;
+  }
+  .pt-60 {
+    padding-top: 60px;
+  }
+}
 @media (min-width: 992px) {
   .fs-110 {
     font-size: 76px;
@@ -677,5 +701,16 @@ ul {
 @media (min-width: 1200px) {
   .fs-110 {
     font-size: 110px;
+  }
+  .fs-22 {
+    font-size: 25px;
+  }
+  .mt-30 {
+    margin-top: 110px;
+  }
+}
+@media (min-width: 1400px) {
+  .mt-30 {
+    margin-top: 30px;
   }
 }
