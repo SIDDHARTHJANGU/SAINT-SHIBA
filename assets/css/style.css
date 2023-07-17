@@ -11,8 +11,9 @@
   display: flex;
 }
 .align-itm-cntr {
-  align-items: center;
+  align-items: center !important;
 }
+
 .justify-space {
   justify-content: space-between;
 }
@@ -29,7 +30,7 @@
   color: white;
 }
 .bg-black {
-  background-color: black !important;
+  background: black;
 }
 .white {
   color: #ffffff;
@@ -135,6 +136,9 @@ ul {
     gap: 35px;
   }
 }
+.bcg-black {
+  background-color: black !important;
+}
 .bg_img {
   background-image: url(../image/png/Group-moon.png);
   background-size: cover;
@@ -142,6 +146,7 @@ ul {
   background-position: center;
 }
 .cards {
+  border: 2px solid #3d3a37;
   border-radius: 10px;
   background: linear-gradient(
     136deg,
@@ -177,15 +182,15 @@ ul {
   margin-top: -85px;
 }
 .img1 {
-  bottom: 15%;
-  left: 83%;
+  top: 0;
+  right: 0;
 }
 .img2 {
   top: 15%;
 }
 .img3 {
-  bottom: -10%;
-  left: 68%;
+  bottom: 0;
+  right: 0;
 }
 .cursus {
   color: var(--white, #fff);
@@ -216,7 +221,7 @@ ul {
 .relative {
   position: relative;
 }
-.ff {
+.ff-poppins {
   font-family: "Poppins", sans-serif;
 }
 .py-13 {
@@ -230,13 +235,17 @@ ul {
 }
 .boxs1 {
   border-radius: 10px;
+  background-color: black;
+  max-width: 100% !important;
+  border: 2px solid #464545;
+}
+.boxs1:hover {
   background: linear-gradient(
     136deg,
     rgba(255, 255, 255, 0.1) 0%,
     rgba(255, 255, 255, 0) 100%
   );
   backdrop-filter: blur(16px);
-  max-width: 100% !important;
 }
 .liquid {
   color: var(--white, #fff);
@@ -248,13 +257,15 @@ ul {
   font-size: 14px;
   font-weight: 400;
 }
+.num {
+  color: var(--white, #f06500);
+  font-size: 28px;
+  font-weight: 600;
+}
 .num-1 {
   color: var(--white, #ffffff);
   font-size: 28px;
   font-weight: 600;
-}
-.num-1:hover {
-  color: #f06500;
 }
 .txt-1 {
   color: var(--white, #fff);
@@ -269,8 +280,8 @@ ul {
   color: var(--white, #fff);
   font-size: 22px;
   font-weight: 600;
-  margin-left: 42%;
-  margin-top: 27%;
+  /* margin-left: 42%;
+  margin-top: 27%; */
 }
 .pco:hover {
   color: #ffffff !important;
@@ -292,6 +303,7 @@ ul {
   font-weight: 400;
 }
 .cad {
+  border: 2px solid #444343;
   border-radius: 10px;
   background: linear-gradient(
     136deg,
@@ -384,6 +396,11 @@ ul {
   font-size: 48px;
   font-weight: 600;
 }
+
+.image {
+  position: absolute;
+  right: 20%;
+}
 .timeline {
   position: relative;
   width: 100%;
@@ -393,7 +410,7 @@ ul {
   position: absolute;
   width: 6px;
   background-color: white;
-  top: 1px;
+  top: 0;
   bottom: 0;
   left: 50%;
   margin-left: -3px;
@@ -410,15 +427,10 @@ ul {
   width: 25px;
   height: 25px;
   right: -13px;
-  background-color: orange;
-
+  background-color: #f88800;
   top: 0;
   border-radius: 50%;
   z-index: 1;
-}
-.image {
-  position: absolute;
-  right: 20%;
 }
 .left {
   left: 0;
@@ -431,10 +443,11 @@ ul {
 }
 .content {
   padding: 20px 30px;
-
+  background-color: black;
   position: relative;
   border-radius: 6px;
 }
+
 @media screen and (max-width: 768px) {
   .timeline::after {
     left: 31px;
@@ -455,7 +468,7 @@ ul {
 
   .left::after,
   .right::after {
-    left: 19px;
+    left: 18px;
   }
 
   .right {
@@ -501,19 +514,26 @@ div {
 }
 .Phase1 {
   color: var(--white, #fff);
-  text-align: left;
+  text-align: right;
   font-size: 36px;
   font-weight: 600;
 }
 .Phase2 {
   color: var(--white, #fff);
-  text-align: right;
+  text-align: left;
   font-size: 36px;
   font-weight: 600;
 }
-.f-4 {
-  color: var(--white, #b6b6b6);
-  text-align: left;
+.f-3 {
+  color: var(--white, #fff);
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 400;
+}
+.f-1 {
+  color: var(--white, #fff);
+  text-align: right;
+  font-family: "Poppins";
   font-size: 18px;
   font-weight: 400;
 }
@@ -576,8 +596,8 @@ div {
   }
 }
 .shadow {
-  left: 67%;
-  margin-top: 8%;
+  right: 0;
+  bottom: 0;
 }
 @media (min-width: 320px) {
   .fs-110 {
@@ -647,7 +667,17 @@ div {
     font-size: 12px;
   }
   .Phase1 {
-    font-size: 33px;
+    color: var(--white, #fff);
+    text-align: left;
+    font-size: 36px;
+    font-weight: 600;
+  }
+  .f-1 {
+    color: var(--white, #fff);
+    text-align: left;
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 400;
   }
 }
 @media (min-width: 576px) {
@@ -729,6 +759,19 @@ div {
   }
   .mt-25 {
     margin-top: 0px !important;
+  }
+  .Phase1 {
+    color: var(--white, #fff);
+    text-align: right;
+    font-size: 36px;
+    font-weight: 600;
+  }
+  .f-1 {
+    color: var(--white, #fff);
+    text-align: right;
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 400;
   }
 }
 @media (min-width: 992px) {
